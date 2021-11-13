@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ThoughtList from "../ThoughtList";
+
 import { useMutation } from "@apollo/client";
 import { ADD_THOUGHT } from "../../utils/mutations";
-import { QUERY_ME, QUERY_ME_BASIC, QUERY_THOUGHTS } from "../../utils/queries";
+import { QUERY_ME, QUERY_THOUGHTS } from "../../utils/queries";
 
 const ThoughtForm = () =>{
     const [addThought, {error}] = useMutation(ADD_THOUGHT, {
