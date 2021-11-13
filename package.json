@@ -1,5 +1,5 @@
 {
-  "name": "deep-thoughts",
+  "name": "mern-social-media",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -8,20 +8,15 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "heroku-postbuild": "cd client && npm run build"
+    "seed": "cd server && npm run seed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mattersievers/deep-thoughts.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mattersievers/deep-thoughts/issues"
+  "dependencies": {
+    "if-env": "^1.0.4"
   },
-  "homepage": "https://github.com/mattersievers/deep-thoughts#readme",
   "devDependencies": {
-    "concurrently": "^6.3.0"
+    "concurrently": "^5.1.0"
   }
 }
