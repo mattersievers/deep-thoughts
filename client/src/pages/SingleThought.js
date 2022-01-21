@@ -6,7 +6,7 @@ import ReactionList from '../components/ReactionList';
 import ReactionForm from '../components/ReactionForm';
 import Auth from '../utils/auth'
 
-const SingleThought = props => {
+const SingleThought = () => {
   const { id: thoughtId } = useParams();
   
   const{ loading, data } = useQuery(QUERY_THOUGHT, {
